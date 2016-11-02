@@ -1,6 +1,15 @@
+h1{
+    color:black;
+    font-size: 50px
+    font-weight: bold;
+    font-family: arial;
+}
+
 body{
 	background-color:purple;
 	width:auto;
 	height: auto;
 }
-
+button, div, form, input {
+			margin: 10px;
+		}
