@@ -16,7 +16,7 @@ function displayGiphy(){
         JSON.stringify(response);
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
-        	 var heroDiv = $('<div class="hero">');
+        	var heroDiv = $('<div class="hero">');
             var rating = results.[i].rating;
             var p = $('<p>').text("Rating: " + rating);
 
@@ -26,18 +26,15 @@ function displayGiphy(){
                    heroImage.attr('data-state', 'animate')
                    heroDiv.append(p);
                    heroDiv.append(heroImage);
-
-
-                    $('#gifsAppearHere').prepend(heroDiv);
+                   $('#gifsAppearHere').prepend(heroDiv);
                     //--------------------------------
     }
-
     });
     };
 //
     function addButtons(){
 
-    	$('ButtonvView').empty();
+    	$('#ButtonvView').empty();
 
     	for (var i = 0, i < subject.length; i++){
     		var a = $('<button>')
@@ -48,7 +45,7 @@ function displayGiphy(){
    }
    $('#addHero').on('click', function(){
 
-   	var hero = $('#hero-input').val.trim();
+   	var hero = $('#hero-input').val().trim();
 
    	subject.push(hero);
 
@@ -59,7 +56,7 @@ function displayGiphy(){
 
    $(document).on('click', 'hero',displayGiphy);
 
-   addButtons();
+   // function addButtons();
 
   $(document).on('click', '.images', function(){
   	var state = $(this).attr('date-state');
@@ -69,4 +66,3 @@ function displayGiphy(){
   		$(this).attr('data-state','still');
   	}
   });
-
