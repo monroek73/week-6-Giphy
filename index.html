@@ -10,13 +10,11 @@
 <h1> Super Hero Giphy </h1>
 
 </head>
-
+   
 <body>
 
-
-<body>
 <!-- Super Hero Buttons -->
-<div id="buttons">
+<div id="buttonsView">
     <button type ="button">Aquaman</button>
     <button type ="button">Batman</button>
     <button type ="button">Captin America</button>
@@ -27,13 +25,26 @@
     <button type ="button">The Flash</button>
     <button type ="button">Thor</button>
     <button type ="button">Wonder Woman</button>
+</div>
     
-
-    <div id="superHerogifs">
+    <div id="gifsApperHere">
     </div>
+
+    <div id="hero-input">
+
+    <form id="hero-form">
+    <label for="hero-input">Add a Super Hero</label>
+    <input type="text" id="hero-input"><br>
     
+    <!-- Button triggers new movie to be added -->
+    <input id="addhero" type="submit" value="Add a Super Hero">
+  </form>
 
+    </div>
 
+    <div class="addHero">
+  
+    </div>
 <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
 <script type="text/javascript">
 </script>
